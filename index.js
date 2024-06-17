@@ -1,7 +1,7 @@
 document.getElementById("button").addEventListener('click', () => {
     // Search input 
     let inputValue = document.getElementById('inputName').value;
-    details
+    document.getElementById("details").innerHTML = "";
     // Search meal by name
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
         .then(response => response.json())
